@@ -1,10 +1,8 @@
 import 'dart:io';
 void main() {
-  var name;
-  var usia;
   stdout.write('Nama anda : ');
-  name = stdin.readLineSync();
+  String name = stdin.readLineSync()!;
   stdout.write('Usia anda : ');
-  usia = stdin.readLineSync();
+  int usia = int.parse(stdin.readLineSync()!);
   print("nama : $name berusia $usia");
 }
