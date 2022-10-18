@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "Live Preview",
+      "workspacePath": "d:\\data pel kampus\\semester 7\\Pemrograman Framework\\flutter",
+      "problemMatcher": [],
+      "label": "Live Preview: Run Server"
+    }
+  ]
+}
