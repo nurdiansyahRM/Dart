@@ -1,7 +1,8 @@
 void main () {
-  var price = 300000;
+  double price = 300000;
   var discount = checkdiscount(price);
-  print('you need top pay : $price - $discount');
+  price = price - discount;
+  print('you need top pay : $price');
 }
 
   num checkdiscount(num price){
@@ -10,5 +11,4 @@ void main () {
     discount = 10 / 100 * price;
   }
   return discount;
-
 }
