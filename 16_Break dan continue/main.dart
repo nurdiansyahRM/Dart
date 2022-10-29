@@ -6,10 +6,9 @@ void main(){
   var searchNumber = int.parse(stdin.readLineSync()!);
   for (int i = 0;i < primeNumbers.length;i++){
     if(searchNumber == primeNumbers[i]){
-      
+      print('$searchNumber adalah bilangan prima ke- ${i+1}');
+      break;
     }
+    print('$searchNumber != ${primeNumbers[i]}');
       }
-
-
-
 }
