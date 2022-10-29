@@ -17,8 +17,23 @@ void main(){
   // }
   // 3. intruksi kode pada iterasi menggunakan metode do-while
 
+  // do{
+  //   print('perulangan ke  : $i  ');
+  //   i++;
+  // }while(i<=10);
+  String firstname;
+  String lastname;
+  bool notValid = false;
   do{
-    print('perulangan ke  : $i  ');
-    i++;
-  }while(i<=10);
+    notValid = false;
+    stdout.write('masukan nama anda (minimal 6 karakter : ');
+    firstname = stdin.readLineSync()!;
+    stdout.write('masukan nama akhir anda (minimal 6 karakter : ');
+    lastname = stdin.readLineSync()!;
+    if(firstname. length < 6 && lastname.length < 6) {
+      notValid = true;
+      print('nama anda tidak valid');
+    }
+  }while(notValid);
+  print('Nama anda $firstname $lastname');
 }
